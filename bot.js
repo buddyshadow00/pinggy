@@ -3,9 +3,9 @@ const axios = require('axios');
 const express = require('express');
 
 // --- CONFIGURATION ---
-const TOKEN = 'YOUR_BOT_TOKEN';
-const CLIENT_ID = 'YOUR_CLIENT_ID';
-const ADMIN_ROLE_ID = 'YOUR_ADMIN_ROLE_ID'; // Or use PermissionFlagsBits.Administrator
+const TOKEN = process.env.TOKEN; 
+const CLIENT_ID = process.env.CLIENT_ID;
+const ADMIN_ROLE_ID = process.env.ADMIN_ROLE_ID;  // Or use PermissionFlagsBits.Administrator
 
 // --- SERVER FOR RENDER ---
 const app = express();
